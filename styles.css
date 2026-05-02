@@ -141,6 +141,34 @@ h2 {
   font-weight: 850;
 }
 
+.paper-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.paper-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 7px 10px;
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--line));
+  border-radius: 7px;
+  background: color-mix(in srgb, var(--accent) 8%, white);
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 850;
+}
+
+.paper-actions a:hover {
+  border-color: var(--accent);
+}
+
 @supports not (color: color-mix(in srgb, red, blue)) {
   .paper-card:hover,
   .home-link {
