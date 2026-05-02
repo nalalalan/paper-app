@@ -17,6 +17,7 @@
 body {
   margin: 0;
   min-height: 100vh;
+  overflow-x: hidden;
   background: linear-gradient(180deg, #ffd2bf 0%, #ffe1d4 42%, #fff7ef 100%);
   color: var(--ink);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -57,6 +58,8 @@ h1 {
   line-height: 1;
   font-weight: 900;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .intro {
@@ -66,6 +69,7 @@ h1 {
   font-size: 16px;
   line-height: 1.42;
   font-weight: 650;
+  overflow-wrap: anywhere;
 }
 
 .home-link {
@@ -83,13 +87,75 @@ h1 {
   box-shadow: var(--shadow);
 }
 
+.project-hero {
+  position: relative;
+  min-width: 0;
+  min-height: 310px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: end;
+  margin-bottom: 12px;
+  overflow: hidden;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background:
+    linear-gradient(135deg, rgba(125, 79, 134, .12), transparent 38%),
+    linear-gradient(315deg, rgba(47, 157, 152, .12), transparent 34%),
+    var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.project-hero h2 {
+  max-width: 820px;
+}
+
+.linkage-mark {
+  position: absolute;
+  inset: 0 0 0 46%;
+  z-index: 0;
+  opacity: .4;
+  pointer-events: none;
+}
+
+.linkage-mark span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 78%;
+  height: 34%;
+  border: 5px solid color-mix(in srgb, var(--accent) 54%, transparent);
+  border-radius: 999px;
+  transform: translate(-50%, -50%) rotate(-9deg);
+}
+
+.linkage-mark span:nth-child(2) {
+  width: 56%;
+  height: 25%;
+  border-color: color-mix(in srgb, var(--accent-2) 58%, transparent);
+  transform: translate(-50%, -50%) rotate(9deg);
+}
+
+.linkage-mark span:nth-child(3) {
+  display: none;
+}
+
+.project-hero > div:last-child {
+  position: relative;
+  z-index: 2;
+  min-width: 0;
+  max-width: 100%;
+}
+
 .paper-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  min-width: 0;
   gap: 12px;
 }
 
 .paper-card {
+  min-width: 0;
   min-height: 260px;
   display: flex;
   flex-direction: column;
@@ -102,6 +168,11 @@ h1 {
   text-decoration: none;
   box-shadow: var(--shadow);
   transition: transform .14s ease, border-color .14s ease, box-shadow .14s ease;
+}
+
+.paper-card > div {
+  min-width: 0;
+  max-width: 100%;
 }
 
 .paper-card:hover {
@@ -124,6 +195,8 @@ h2 {
   line-height: 1;
   font-weight: 900;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .paper-desc {
@@ -132,6 +205,7 @@ h2 {
   color: var(--muted);
   font-size: 15px;
   line-height: 1.45;
+  overflow-wrap: anywhere;
 }
 
 .paper-foot {
@@ -178,7 +252,9 @@ h2 {
 
 @media (max-width: 760px) {
   .shell {
-    width: calc(100% - 24px);
+    width: min(calc(100% - 24px), 366px);
+    margin-left: 12px;
+    margin-right: auto;
     padding-top: 28px;
   }
 
@@ -187,11 +263,21 @@ h2 {
     align-items: start;
   }
 
+  h1 {
+    max-width: 100%;
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 1.08;
+  }
+
   .home-link {
     width: 100%;
   }
 
   .paper-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
