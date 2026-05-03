@@ -150,18 +150,31 @@ h1 {
 }
 
 .motion-grid,
+.motion-cluster,
+.motion-stack,
 .object-study {
   display: grid;
   gap: 12px;
-  margin-top: 12px;
 }
 
 .motion-grid {
   grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin-top: 12px;
+}
+
+.motion-cluster {
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.motion-stack {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .object-study {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 12px;
 }
 
 .motion-grid video,
@@ -183,11 +196,6 @@ h1 {
   aspect-ratio: 16 / 9;
 }
 
-.motion-tall,
-.motion-small {
-  grid-column: span 2;
-}
-
 .motion-tall {
   aspect-ratio: 3 / 4;
   object-position: center 42%;
@@ -195,6 +203,11 @@ h1 {
 
 .motion-small {
   aspect-ratio: 16 / 9;
+}
+
+.motion-stack .motion-small {
+  height: 100%;
+  aspect-ratio: auto;
 }
 
 .object-study img {
@@ -264,6 +277,8 @@ h1 {
   }
 
   .motion-grid,
+  .motion-cluster,
+  .motion-stack,
   .object-study,
   .papers {
     grid-template-columns: minmax(0, 1fr);
@@ -277,6 +292,11 @@ h1 {
 
   .motion-tall {
     aspect-ratio: 3 / 4;
+  }
+
+  .motion-stack .motion-small {
+    height: auto;
+    aspect-ratio: 16 / 9;
   }
 }
 
