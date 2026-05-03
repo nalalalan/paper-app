@@ -18,44 +18,104 @@
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <main class="shell">
-    <header class="masthead">
-      <div>
-        <p class="kicker">sarrus.aolabs.io</p>
+  <header class="topbar">
+    <a class="brand" href="/">sarrus.aolabs.io</a>
+    <a class="home-link" href="https://aolabs.io/">AO Labs</a>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Sarrus-linkage robotic materials">
+      <img src="/assets/sarrus-array-wall.jpg" alt="">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="kicker">current paper</p>
         <h1>Sarrus-Linkage Robotic Materials</h1>
         <p class="intro">Programmable shape, stiffness, and motion from pneumatic Sarrus-linkage-based cells.</p>
-      </div>
-      <a class="home-link" href="https://aolabs.io/">AO Labs</a>
-    </header>
-
-    <section class="project-hero" aria-label="Project focus">
-      <div class="linkage-mark" aria-hidden="true">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div>
-        <p class="paper-label">current paper</p>
-        <h2>Sarrus-Linkage Robotic Materials for Programmable Shape, Stiffness, and Motion</h2>
-        <p class="paper-desc">The completed first project: a cell architecture and material system built around Sarrus linkages, pneumatic expansion, and programmable mechanical behavior.</p>
+        <div class="hero-stats" aria-label="Project themes">
+          <span>shape</span>
+          <span>stiffness</span>
+          <span>motion</span>
+          <span>arrays</span>
+        </div>
       </div>
     </section>
 
-    <section class="paper-grid" aria-label="Manuscripts">
+    <section class="claim shell" aria-label="Paper claim">
+      <p class="kicker">paper claim</p>
+      <h2>Sarrus-linkage cells turn pressure into programmable robotic material behavior.</h2>
+      <p>The first paper is the completed platform: a repeatable cell geometry, linked arrays, force and stiffness characterization, and demonstrations that move from single-cell mechanics to shape-changing surfaces and bodies.</p>
+    </section>
+
+    <section class="evidence shell" aria-label="Evidence wall">
+      <article class="tile tile-large">
+        <img src="/assets/module-iso.jpg" alt="">
+        <div>
+          <p class="kicker">cell architecture</p>
+          <h3>Printed Sarrus modules as the base unit.</h3>
+        </div>
+      </article>
+
+      <article class="tile">
+        <img src="/assets/linkage-geometry.jpg" alt="">
+        <div>
+          <p class="kicker">mechanics</p>
+          <h3>Expansion and leg angle controlled by internal pressure.</h3>
+        </div>
+      </article>
+
+      <article class="tile">
+        <img src="/assets/module-biasing.jpg" alt="">
+        <div>
+          <p class="kicker">coupling</p>
+          <h3>Modules bias each other into larger deformations.</h3>
+        </div>
+      </article>
+
+      <article class="tile">
+        <img src="/assets/force-stiffness.jpg" alt="">
+        <div>
+          <p class="kicker">bench data</p>
+          <h3>Force and stiffness curves make the material quantitative.</h3>
+        </div>
+      </article>
+
+      <article class="tile">
+        <img src="/assets/planar-wave.jpg" alt="">
+        <div>
+          <p class="kicker">surface modes</p>
+          <h3>Arrays become controllable planar shape programs.</h3>
+        </div>
+      </article>
+
+      <article class="tile tile-large">
+        <img src="/assets/cylindrical-object.jpg" alt="">
+        <div>
+          <p class="kicker">body behavior</p>
+          <h3>Linked cells wrap, roll, and manipulate objects.</h3>
+        </div>
+      </article>
+    </section>
+
+    <section class="manuscripts shell" aria-label="Manuscripts">
+      <div class="section-head">
+        <p class="kicker">manuscripts</p>
+        <h2>Read the current drafts.</h2>
+      </div>
+
       <a class="paper-card" href="/topology-programmable-soft-robotic-surfaces-and-bodies-full.pdf?v=2026-05-02-fig11">
         <div>
           <p class="paper-label">full manuscript</p>
-          <h2>Topology-programmable soft robotic surfaces and bodies</h2>
-          <p class="paper-desc">Long-form manuscript with the complete project framing and figures.</p>
+          <h3>Topology-programmable soft robotic surfaces and bodies</h3>
+          <p>Long-form manuscript with the complete project framing and figures.</p>
         </div>
-        <div class="paper-foot">Open PDF</div>
+        <span>Open PDF</span>
       </a>
 
       <article class="paper-card">
         <div>
           <p class="paper-label">science version</p>
-          <h2>Topology-programmable soft robotic surfaces and bodies</h2>
-          <p class="paper-desc">Science-format manuscript and supplementary notes.</p>
+          <h3>Topology-programmable soft robotic surfaces and bodies</h3>
+          <p>Science-format manuscript and supplementary notes.</p>
         </div>
         <div class="paper-actions" aria-label="Science version PDFs">
           <a href="/topology-programmable-soft-robotic-surfaces-and-bodies-science.pdf">Open manuscript</a>
