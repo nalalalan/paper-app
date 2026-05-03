@@ -189,7 +189,8 @@ h1 {
 }
 
 .motion-tall {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 3 / 4;
+  object-position: center 42%;
 }
 
 .motion-small {
@@ -275,7 +276,7 @@ h1 {
   }
 
   .motion-tall {
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 3 / 4;
   }
 }
 
