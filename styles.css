@@ -49,6 +49,12 @@ a {
   background: linear-gradient(180deg, rgba(0, 0, 0, .72), transparent);
 }
 
+.nav-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .brand,
 .home-link {
   min-height: 34px;
@@ -346,6 +352,10 @@ h1 {
     right: auto;
     width: min(calc(100vw - 16px), 374px);
     padding: 10px 8px;
+  }
+
+  .nav-links {
+    gap: 6px;
   }
 
   .brand,
