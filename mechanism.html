@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sarrus Mechanism Proof</title>
-  <meta name="description" content="A reviewer-facing Sarrus mechanism artifact: geometry, constraints, actuation, force/stiffness evidence, prototype state, iteration, and physical-experience translation.">
+  <title>Sarrus mechanism</title>
+  <meta name="description" content="Geometry, actuation, measured response, build state, and motion examples for topology-programmable soft robotic surfaces and bodies.">
   <link rel="canonical" href="https://sarrus.aolabs.io/mechanism.html" />
-  <meta property="og:title" content="Sarrus Mechanism Proof">
-  <meta property="og:description" content="Reviewer-facing mechanism evidence for topology-programmable soft robotic surfaces and bodies.">
+  <meta property="og:title" content="Sarrus mechanism">
+  <meta property="og:description" content="Geometry, actuation, measured response, build state, and motion examples for topology-programmable soft robotic surfaces and bodies.">
   <meta property="og:image" content="https://sarrus.aolabs.io/og-image-20260506-cohesive.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sarrus.aolabs.io/mechanism.html">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sarrus Mechanism Proof">
-  <meta name="twitter:description" content="Reviewer-facing mechanism evidence for topology-programmable soft robotic surfaces and bodies.">
+  <meta name="twitter:title" content="Sarrus mechanism">
+  <meta name="twitter:description" content="Geometry, actuation, measured response, build state, and motion examples for topology-programmable soft robotic surfaces and bodies.">
   <meta name="twitter:image" content="https://sarrus.aolabs.io/og-image-20260506-cohesive.png">
   <link rel="icon" href="/favicon.svg?v=20260506-cohesive" type="image/svg+xml">
-  <link rel="stylesheet" href="/styles.css?v=20260506-figure-fit">
+  <link rel="stylesheet" href="/styles.css?v=20260506-language-cleanup">
 </head>
 <body>
   <header class="topbar" aria-label="Sarrus navigation">
@@ -29,14 +29,14 @@
   </header>
 
   <main>
-    <article class="mechanism-page" aria-label="Sarrus mechanism proof">
+    <article class="mechanism-page" aria-label="Sarrus mechanism">
       <header class="mechanism-hero">
         <div>
-          <p>reviewer proof / wdi r&amp;d</p>
-          <h1>Sarrus mechanism proof</h1>
-          <span>One public artifact for inspecting the mechanism behind programmable soft robotic surfaces and bodies.</span>
+          <p>mechanism</p>
+          <h1>Sarrus mechanism</h1>
+          <span>Geometry, actuation, measured response, build state, and motion examples for topology-programmable soft robotic surfaces and bodies.</span>
         </div>
-        <img src="/assets/linkage-geometry.jpg" alt="Sarrus-linkage cell geometry and pressure-driven expansion evidence.">
+        <img src="/assets/linkage-geometry.jpg" alt="Sarrus-linkage cell geometry and pressure-driven expansion.">
       </header>
 
       <section class="proof-strip" aria-label="Mechanism summary">
@@ -66,30 +66,30 @@
         </div>
         <div class="proof-media two-up">
           <figure>
-            <img src="/assets/linkage-geometry.jpg" alt="Cell geometry and linkage evidence.">
-            <figcaption>Cell geometry and pressure-driven expansion evidence.</figcaption>
+            <img src="/assets/linkage-geometry.jpg" alt="Cell geometry and linkage record.">
+            <figcaption>Cell geometry and pressure-driven expansion.</figcaption>
           </figure>
           <figure>
-            <img src="/assets/force-stiffness.jpg" alt="Pressure-dependent force and stiffness evidence.">
-            <figcaption>Pressure-dependent force and stiffness evidence from the paper figures.</figcaption>
+            <img src="/assets/force-stiffness.jpg" alt="Pressure-dependent force and stiffness data.">
+            <figcaption>Pressure-dependent force and stiffness from the paper figures.</figcaption>
           </figure>
         </div>
       </section>
 
       <section class="evidence-table-section" id="quantitative-evidence">
         <div>
-          <p>reviewer quick read</p>
-          <h2>Quantitative mechanism evidence</h2>
-          <span>Values marked approx. are read from the public figure axes; table values are taken from the supplementary tables.</span>
+          <p>data</p>
+          <h2>Measured response</h2>
+          <span>Pressure, displacement, force, stiffness, hysteresis, and surface-motion values from the manuscript and supplementary tables.</span>
         </div>
-        <div class="table-scroll" role="region" aria-label="Quantitative Sarrus mechanism evidence table" tabindex="0">
+        <div class="table-scroll" role="region" aria-label="Sarrus measurement table" tabindex="0">
           <table class="evidence-table">
             <thead>
               <tr>
                 <th>Signal</th>
                 <th>Public value</th>
                 <th>Source</th>
-                <th>Reviewer relevance</th>
+                <th>Why it matters</th>
               </tr>
             </thead>
             <tbody>
@@ -121,7 +121,7 @@
                 <td>Hysteresis</td>
                 <td>Pressure-dependent hysteresis is plotted for uncapped cells, capped cells, and 3 x 3 arrays; raw loop area is not yet digitized on this page.</td>
                 <td>Supplementary Fig. 4</td>
-                <td>Shows reviewer-visible characterization while preserving the current data boundary.</td>
+                <td>Shows measured characterization while preserving the current data boundary.</td>
               </tr>
               <tr>
                 <td>Planar dome height</td>
@@ -139,7 +139,7 @@
                 <td>Iteration / limitation</td>
                 <td>Cap reduces top-surface gaps; 2 x 2 modules reduce tubing; current system still uses tethered pneumatic inputs and manual assembly.</td>
                 <td>Methods; Discussion</td>
-                <td>Makes the prototype state and next engineering step explicit.</td>
+                <td>Documents current build constraints: cap gaps, module tubing, tethered pneumatic inputs, and manual assembly.</td>
               </tr>
             </tbody>
           </table>
@@ -148,12 +148,12 @@
 
       <section class="proof-section">
         <div class="proof-copy">
-          <p>prototype state</p>
-          <h2>Build, actuation, and iteration</h2>
+          <p>build</p>
+          <h2>Build and actuation</h2>
           <ul>
             <li>The physical module is a printed pneumatic prototype, not a speculative rendering.</li>
             <li>The actuation assumption used in the public paper is tethered pneumatic input; integrated electronically addressed actuation remains future work.</li>
-            <li>The current reviewer-visible limitation is source coverage: the public page now exposes the mechanism evidence in HTML, while detailed numeric extraction still belongs in the manuscript and supplementary figures.</li>
+            <li>The current public record gives figure-level measurements here, with fuller numeric detail in the manuscript and supplementary figures.</li>
           </ul>
         </div>
         <div class="proof-media two-up">
@@ -170,12 +170,12 @@
 
       <section class="proof-section">
         <div class="proof-copy">
-          <p>physical experience</p>
-          <h2>From mechanism to believable motion</h2>
+          <p>motion</p>
+          <h2>Motion examples</h2>
           <ul>
-            <li>The WDI-relevant reading is not just a soft robotics cell; it is a controllable physical behavior primitive.</li>
-            <li>A surface or body can visibly change shape, move an object, generate a travelling wave, or produce a character-like body motion from the same repeated module architecture.</li>
-            <li>The current strongest show-value example is object manipulation: the body lowers around an object, grasps it, transports it through a curved posture, and releases it elsewhere.</li>
+            <li>The repeated cell/module architecture produces more than a static soft-robotics sample: it creates repeatable physical behaviors.</li>
+            <li>A surface or body can visibly change shape, move an object, generate a travelling wave, or produce body-scale motion from the same module architecture.</li>
+            <li>The clearest object-manipulation example is pickup and drop: the body lowers around an object, transports it through a curved posture, and releases it elsewhere.</li>
           </ul>
         </div>
         <figure class="proof-video">
@@ -184,19 +184,6 @@
           </video>
           <figcaption>Object pickup, transport, and drop sequence from the cylindrical topology.</figcaption>
         </figure>
-      </section>
-
-      <section class="reviewer-note">
-        <div>
-          <p>source coverage</p>
-          <h2>What a reviewer can inspect now</h2>
-        </div>
-        <ul>
-          <li>HTML-visible evidence: mechanism summary, constraint/load-path description, actuation assumption, build state, limitation, and show-value translation.</li>
-          <li>Quantitative evidence: pressure range, expansion ratio, leg angle, force, stiffness, hysteresis status, dome height, and double-dome resolution are now visible in the page table.</li>
-          <li>Visual evidence: cell geometry, pressure-dependent force/stiffness figure, module parts, module biasing, and physical object-manipulation motion.</li>
-          <li>Curve extraction would make the plotted force/stiffness/hysteresis data easier to inspect with uncertainty and test conditions.</li>
-        </ul>
       </section>
 
       <section class="paper-links mechanism-papers" aria-label="Mechanism source PDFs">
