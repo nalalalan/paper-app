@@ -76,6 +76,76 @@
         </div>
       </section>
 
+      <section class="evidence-table-section" id="quantitative-evidence">
+        <div>
+          <p>reviewer quick read</p>
+          <h2>Quantitative mechanism evidence</h2>
+          <span>Values marked approx. are read from the public figure axes; table values are taken from the supplementary tables.</span>
+        </div>
+        <div class="table-scroll" role="region" aria-label="Quantitative Sarrus mechanism evidence table" tabindex="0">
+          <table class="evidence-table">
+            <thead>
+              <tr>
+                <th>Signal</th>
+                <th>Public value</th>
+                <th>Source</th>
+                <th>Reviewer relevance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Actuation envelope</td>
+                <td>10-120 psi plotted for cell expansion, force response, and local stiffness.</td>
+                <td>Fig. 1; Fig. 3</td>
+                <td>Defines the tested pneumatic operating range.</td>
+              </tr>
+              <tr>
+                <td>Cell travel / expansion</td>
+                <td>Expansion ratio increases from 1.0 to approx. 1.85-1.90 at 120 psi; estimated leg angle reaches approx. 60-66 deg.</td>
+                <td>Fig. 1(c,d)</td>
+                <td>Shows pressure-to-motion conversion in the Sarrus-linkage geometry.</td>
+              </tr>
+              <tr>
+                <td>Output force</td>
+                <td>Pressure-dependent force-displacement curves reach approx. 40-50 N for single-cell tests and above 50 N for the 3 x 3 array near maximum compression.</td>
+                <td>Fig. 3(a-c)</td>
+                <td>Shows load-bearing behavior instead of only visual deformation.</td>
+              </tr>
+              <tr>
+                <td>Local stiffness</td>
+                <td>Computed local stiffness peaks at approx. 5-7 N/mm across cell and array plots, varying with pressure and compression state.</td>
+                <td>Fig. 3(d-f)</td>
+                <td>Connects the mechanism to tunable compliance and contact behavior.</td>
+              </tr>
+              <tr>
+                <td>Hysteresis</td>
+                <td>Pressure-dependent hysteresis is plotted for uncapped cells, capped cells, and 3 x 3 arrays; raw loop area is not yet digitized on this page.</td>
+                <td>Supplementary Fig. 4</td>
+                <td>Shows reviewer-visible characterization while preserving the current data boundary.</td>
+              </tr>
+              <tr>
+                <td>Planar dome height</td>
+                <td>At 100 psi, 1 x 1 actuation reaches 60 mm max height; 2 x 2 actuation reaches 115 mm.</td>
+                <td>Supplementary Table 1</td>
+                <td>Quantifies the visible surface-motion scale.</td>
+              </tr>
+              <tr>
+                <td>Double-dome resolution</td>
+                <td>At 100 psi, adjacent 1 x 1 features merge at 60 mm; with four unactuated cells between features, separated low-amplitude peaks reach 35 mm.</td>
+                <td>Supplementary Table 2</td>
+                <td>Shows the resolution/amplitude tradeoff in the continuous surface.</td>
+              </tr>
+              <tr>
+                <td>Iteration / limitation</td>
+                <td>Cap reduces top-surface gaps; 2 x 2 modules reduce tubing; current system still uses tethered pneumatic inputs and manual assembly.</td>
+                <td>Methods; Discussion</td>
+                <td>Makes the prototype state and next engineering step explicit.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       <section class="proof-section">
         <div class="proof-copy">
           <p>prototype state</p>
@@ -123,9 +193,9 @@
         </div>
         <ul>
           <li>HTML-visible evidence: mechanism summary, constraint/load-path description, actuation assumption, build state, limitation, and show-value translation.</li>
+          <li>Quantitative evidence: pressure range, expansion ratio, leg angle, force, stiffness, hysteresis status, dome height, and double-dome resolution are now visible in the page table.</li>
           <li>Visual evidence: cell geometry, pressure-dependent force/stiffness figure, module parts, module biasing, and physical object-manipulation motion.</li>
-          <li>PDF evidence: manuscript and supplementary materials contain the detailed figure set and measurement context.</li>
-          <li>Missing next proof: extract one compact numeric table from the paper figures for travel, pressure, force, stiffness, and hysteresis so the reviewer does not need to read the full PDF.</li>
+          <li>Next data proof: digitize the plotted force/stiffness/hysteresis curves into a downloadable table with uncertainty and test conditions.</li>
         </ul>
       </section>
 
