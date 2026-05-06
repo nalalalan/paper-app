@@ -1,14 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Sarrus icon">
-  <rect width="128" height="128" rx="26" fill="#141419"/>
+  <rect width="128" height="128" rx="26" fill="#0c0d12"/>
   <style>
-    .m { font-family: Inter, Arial, Helvetica, sans-serif; font-weight: 900; fill: #f7f1ed; }
-    .a { font-family: Inter, Arial, Helvetica, sans-serif; font-weight: 900; fill: #e4aeb9; }
+    .w { font-family: Inter, Arial, Helvetica, sans-serif; font-weight: 950; fill: #f7f5ef; }
+    .r { font-family: Inter, Arial, Helvetica, sans-serif; font-weight: 950; fill: #d76d86; }
   </style>
-  <text x="54" y="88" text-anchor="middle" font-size="74" class="m" >S</text>
-  <path d="M73 42 101 86" stroke="#b8aadf" stroke-width="7" stroke-linecap="round"/>
-  <path d="M101 42 73 86" stroke="#b8aadf" stroke-width="7" stroke-linecap="round"/>
-  <circle cx="73" cy="42" r="6" fill="#d6b45f"/>
-  <circle cx="101" cy="42" r="6" fill="#d6b45f"/>
-  <circle cx="73" cy="86" r="6" fill="#d6b45f"/>
-  <circle cx="101" cy="86" r="6" fill="#d6b45f"/>
+  <text x="53" y="88" text-anchor="middle" font-size="76" class="w" >S</text>
+  <path d="M74 42 101 86M101 42 74 86" fill="none" stroke="#8a63ff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="74" cy="42" r="6" fill="#e6b33a"/>
+  <circle cx="101" cy="42" r="6" fill="#e6b33a"/>
+  <circle cx="74" cy="86" r="6" fill="#e6b33a"/>
+  <circle cx="101" cy="86" r="6" fill="#e6b33a"/>
 </svg>
