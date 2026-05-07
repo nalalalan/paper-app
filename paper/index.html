@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paper | sarrus.aolabs.io</title>
+  <meta name="description" content="Sarrus paper PDF." />
+  <link rel="canonical" href="https://sarrus.aolabs.io/paper/" />
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="AO Labs">
+  <meta property="og:title" content="Soft robotic surfaces and bodies with reconfigurable topologies based on a monolithically printed pneumatic cell">
+  <meta property="og:description" content="Current Sarrus paper PDF.">
+  <meta property="og:url" content="https://sarrus.aolabs.io/paper/">
+  <link rel="icon" href="/favicon.svg?v=20260507-paper" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css?v=20260507-paper-route">
+  <style>
+    .paper-shell {
+      width: min(calc(100vw - 36px), 1180px);
+      margin: 0 auto;
+      padding: 24px 0 40px;
+    }
+
+    .paper-record {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 16px;
+      align-items: end;
+      margin-bottom: 16px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    .paper-record h1 {
+      margin: 0;
+      max-width: 930px;
+      font-size: clamp(32px, 5vw, 66px);
+      line-height: .96;
+    }
+
+    .paper-record p {
+      margin: 0 0 8px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .paper-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .paper-actions a {
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--ink);
+      padding: 0 12px;
+      font-size: 13px;
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .paper-actions a:first-child {
+      border-color: var(--ink);
+      background: var(--ink);
+      color: #fff;
+    }
+
+    .paper-viewer {
+      height: min(78vh, 920px);
+      min-height: 620px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .paper-viewer iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: #fff;
+    }
+
+    @media (max-width: 760px) {
+      .paper-record {
+        grid-template-columns: 1fr;
+      }
+
+      .paper-actions {
+        justify-content: flex-start;
+      }
+
+      .paper-viewer {
+        height: 72vh;
+        min-height: 460px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar" aria-label="Sarrus paper navigation">
+    <a class="brand" href="/">Sarrus</a>
+    <nav>
+      <a href="/architecture.html">Architecture</a>
+      <a href="/paper.pdf">PDF</a>
+      <a href="https://aolabs.io/">AO Labs</a>
+    </nav>
+  </header>
+
+  <main class="paper-shell">
+    <section class="paper-record" aria-label="Paper">
+      <div>
+        <p>Paper</p>
+        <h1>Soft robotic surfaces and bodies with reconfigurable topologies based on a monolithically printed pneumatic cell</h1>
+      </div>
+      <div class="paper-actions">
+        <a href="/paper.pdf">Open PDF</a>
+        <a href="/architecture.html">Architecture</a>
+      </div>
+    </section>
+
+    <section class="paper-viewer" aria-label="PDF preview">
+      <iframe src="/paper.pdf#view=FitH" title="Sarrus paper PDF"></iframe>
+    </section>
+  </main>
+</body>
+</html>
