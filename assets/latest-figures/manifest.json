@@ -1,6 +1,6 @@
 {
   "source_export": "nature_science_final_overleaf_clean_2026_05_01_planar_recrop/figures",
-  "render": "pdftoppm -singlefile -jpeg -jpegopt quality=90 -r 170",
+  "render": "pdftoppm -singlefile -jpeg -jpegopt quality=92 -r 190 for bf01 and bf02; older entries retain their previous web derivatives unless regenerated separately",
   "note": "Web-ready derivatives generated from the latest Sarrus figure PDFs; raw PDFs are not committed to avoid static-site bloat.",
   "figures": [
     {
@@ -8,14 +8,14 @@
       "source_sha256": "32f480773e8af3b00d23b3d28b1381083b5c890410ed42d4bea102c17f377361",
       "source_bytes": 10195377,
       "web_asset": "/assets/latest-figures/bf01-linkage-geometry-capped-uncapped.jpg",
-      "web_bytes": 175363
+      "web_bytes": 224555
     },
     {
       "source_file": "bf02_module_biasing_with_angle.pdf",
       "source_sha256": "115ffdff7222c9b38d0b07e8ecb2413f72d030bd9466cc5948cec751ec2cc393",
       "source_bytes": 11288359,
       "web_asset": "/assets/latest-figures/bf02-module-biasing-with-angle.jpg",
-      "web_bytes": 209193
+      "web_bytes": 263398
     },
     {
       "source_file": "bf03_squish_pics.pdf",

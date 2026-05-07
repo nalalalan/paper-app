@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sarrus record</title>
-  <meta name="description" content="Measurements, build state, and motion demonstrations for Sarrus pneumatic cell arrays.">
+  <title>Cell and module behavior</title>
+  <meta name="description" content="Cell geometry, module bending, measurements, build state, and motion demonstrations for Sarrus pneumatic cell arrays.">
   <link rel="canonical" href="https://sarrus.aolabs.io/architecture.html" />
-  <meta property="og:title" content="Sarrus record">
-  <meta property="og:description" content="Measurements, build state, and motion demonstrations for Sarrus pneumatic cell arrays.">
+  <meta property="og:title" content="Cell and module behavior">
+  <meta property="og:description" content="Cell geometry, module bending, measurements, build state, and motion demonstrations for Sarrus pneumatic cell arrays.">
   <meta property="og:image" content="https://sarrus.aolabs.io/og-image-20260506-clear.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sarrus.aolabs.io/architecture.html">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sarrus record">
-  <meta name="twitter:description" content="Measurements, build state, and motion demonstrations for Sarrus pneumatic cell arrays.">
+  <meta name="twitter:title" content="Cell and module behavior">
+  <meta name="twitter:description" content="Cell geometry, module bending, measurements, build state, and motion demonstrations for Sarrus pneumatic cell arrays.">
   <meta name="twitter:image" content="https://sarrus.aolabs.io/og-image-20260506-clear.png">
   <link rel="icon" href="/favicon.svg?v=20260506-clear" type="image/svg+xml">
-  <link rel="stylesheet" href="/styles.css?v=20260507-paper-title">
+  <link rel="stylesheet" href="/styles.css?v=20260507-cell-module">
 </head>
 <body>
   <header class="topbar" aria-label="Sarrus navigation">
@@ -33,32 +33,34 @@
 
       <section class="architecture-section">
         <div class="section-copy">
-          <p>cell</p>
           <h2>Cell and module behavior</h2>
           <ul>
-            <li>Pressure-driven expansion rotates the linkage legs while the soft pneumatic chamber supplies the deformation.</li>
-            <li>The capped and uncapped cells are compared in the same operating range, so the geometry change is visible before topology-level behavior is introduced.</li>
-            <li>The force-displacement plots separate single-cell response from the 3 x 3 array, keeping load-bearing behavior distinct from the motion demonstrations.</li>
+            <li>Pressure-driven expansion rotates the compliant linkage legs while the integrated pneumatic chamber supplies deformation.</li>
+            <li>Capped and uncapped cells are compared over the same 10-120 psi range, separating the cell expansion response from module-scale bending.</li>
+            <li>The 2 x 2 module introduces the bending bias used later for surface shaping and cylindrical body motion.</li>
           </ul>
         </div>
-        <div class="figure-grid two-up">
+        <div class="figure-grid cell-module-figures">
           <figure>
-            <img src="/assets/linkage-geometry.jpg" alt="Cell geometry and pressure-driven expansion.">
+            <img src="/assets/latest-figures/bf01-linkage-geometry-capped-uncapped.jpg?v=2026-05-07-cell-module" alt="Capped and uncapped cell geometry and pressure-driven expansion.">
             <figcaption>Cell expansion under pressure; capped and uncapped variants stay side by side.</figcaption>
           </figure>
           <figure>
-            <img src="/assets/latest-figures/bf05-linkage-array-force-stiffness-comparison-with-capped.jpg" alt="Pressure-dependent force and stiffness data.">
-            <figcaption>Force and stiffness curves for single cells and the 3 x 3 array.</figcaption>
+            <img src="/assets/latest-figures/bf02-module-biasing-with-angle.jpg?v=2026-05-07-cell-module" alt="Single-module and two-module bending under pressure.">
+            <figcaption>Single-module and two-module bending response over the actuation range.</figcaption>
           </figure>
         </div>
       </section>
 
       <section class="evidence-table-section" id="quantitative-evidence">
         <div>
-          <p>measurements</p>
           <h2>Reported values</h2>
           <span>Figure-read estimates are kept approximate; table values are reported directly from the current paper.</span>
         </div>
+        <figure class="measurement-figure">
+          <img src="/assets/latest-figures/bf05-linkage-array-force-stiffness-comparison-with-capped.jpg" alt="Pressure-dependent force and stiffness data.">
+          <figcaption>Force and stiffness curves for single cells and the 3 x 3 array.</figcaption>
+        </figure>
         <div class="table-scroll" role="region" aria-label="Sarrus measurement table" tabindex="0">
           <table class="evidence-table">
             <thead>
@@ -125,7 +127,6 @@
 
       <section class="architecture-section">
         <div class="section-copy">
-          <p>build</p>
           <h2>Physical module and test state</h2>
           <ul>
             <li>The module photographs show the printed parts and snap-fit assembly rather than a purely rendered concept.</li>
@@ -147,7 +148,6 @@
 
       <section class="architecture-section" id="motion">
         <div class="section-copy">
-          <p>motion</p>
           <h2>Programmed surface and body motion</h2>
           <ul>
             <li>The planar figures are limited to one height-map example and one object-transport example, instead of repeating similar wave panels.</li>
