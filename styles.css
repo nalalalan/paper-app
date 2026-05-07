@@ -152,6 +152,43 @@ h1 {
   line-height: 1.24;
 }
 
+.hero-paper-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.paper-button {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 250, 240, .08);
+  color: var(--text);
+  padding: 0 14px;
+  font-size: 13px;
+  font-weight: 900;
+  text-decoration: none;
+  transition: 160ms ease;
+}
+
+.paper-button.primary {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #150d0a;
+}
+
+.paper-button:hover,
+.paper-button:focus-visible {
+  border-color: rgba(230, 179, 77, .68);
+  background: rgba(255, 250, 240, .12);
+  outline: none;
+  transform: translateY(-1px);
+}
+
 .motion-grid,
 .motion-cluster,
 .motion-stack,
@@ -784,6 +821,10 @@ h1 {
 
   .hero-copy span {
     font-size: 16px;
+  }
+
+  .hero-paper-actions {
+    gap: 8px;
   }
 
   .papers {
