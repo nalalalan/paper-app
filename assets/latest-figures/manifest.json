@@ -1,0 +1,133 @@
+{
+  "source_export": "nature_science_final_overleaf_clean_2026_05_01_planar_recrop/figures",
+  "render": "pdftoppm -singlefile -jpeg -jpegopt quality=90 -r 170",
+  "note": "Web-ready derivatives generated from the latest Sarrus figure PDFs; raw PDFs are not committed to avoid static-site bloat.",
+  "figures": [
+    {
+      "source_file": "bf01_linkage_geometry_capped_uncapped.pdf",
+      "source_sha256": "32f480773e8af3b00d23b3d28b1381083b5c890410ed42d4bea102c17f377361",
+      "source_bytes": 10195377,
+      "web_asset": "/assets/latest-figures/bf01-linkage-geometry-capped-uncapped.jpg",
+      "web_bytes": 175363
+    },
+    {
+      "source_file": "bf02_module_biasing_with_angle.pdf",
+      "source_sha256": "115ffdff7222c9b38d0b07e8ecb2413f72d030bd9466cc5948cec751ec2cc393",
+      "source_bytes": 11288359,
+      "web_asset": "/assets/latest-figures/bf02-module-biasing-with-angle.jpg",
+      "web_bytes": 209193
+    },
+    {
+      "source_file": "bf03_squish_pics.pdf",
+      "source_sha256": "33628edec25ce325499a6355a574e06243ef5e3383b25a00f8637e9db5b2c838",
+      "source_bytes": 20196333,
+      "web_asset": "/assets/latest-figures/bf03-squish-pics.jpg",
+      "web_bytes": 208260
+    },
+    {
+      "source_file": "bf04_hysteresis_panel.pdf",
+      "source_sha256": "40b58950ac1215ac34d689dc6137027656abcd424126ec6d03705a7785949002",
+      "source_bytes": 205115,
+      "web_asset": "/assets/latest-figures/bf04-hysteresis-panel.jpg",
+      "web_bytes": 68691
+    },
+    {
+      "source_file": "bf05_linkage_array_force_stiffness_comparison_with_capped.pdf",
+      "source_sha256": "e132db1a66e4c212b9186d60829b63ed17d629c1a55e1b4812c430c7cae3e03f",
+      "source_bytes": 342514,
+      "web_asset": "/assets/latest-figures/bf05-linkage-array-force-stiffness-comparison-with-capped.jpg",
+      "web_bytes": 146429
+    },
+    {
+      "source_file": "bf06_planar_dome_single.pdf",
+      "source_sha256": "e2ccad00c35f335d7a049f0d507cf133b864476c5afe3e06e34eb3832c87a9cf",
+      "source_bytes": 13422341,
+      "web_asset": "/assets/latest-figures/bf06-planar-dome-single.jpg",
+      "web_bytes": 344420
+    },
+    {
+      "source_file": "bf07_planar_dome_double.pdf",
+      "source_sha256": "a462acc2d64822b0e985e46f12a4ad284fbea55f1269b3a55ce2a001e3ac76b7",
+      "source_bytes": 12725707,
+      "web_asset": "/assets/latest-figures/bf07-planar-dome-double.jpg",
+      "web_bytes": 361686
+    },
+    {
+      "source_file": "bf08_planar_overhang.pdf",
+      "source_sha256": "5829ebd0742e53be51824c495db07b2c06a4c8f7bcd41b4805b46a377e32ab1f",
+      "source_bytes": 6800207,
+      "web_asset": "/assets/latest-figures/bf08-planar-overhang.jpg",
+      "web_bytes": 260182
+    },
+    {
+      "source_file": "bf09_planar_object_concave.pdf",
+      "source_sha256": "053f1964e30a77167f6050c7b94e672f0f1fe6063847436b9ddf7a9b80066704",
+      "source_bytes": 18070819,
+      "web_asset": "/assets/latest-figures/bf09-planar-object-concave.jpg",
+      "web_bytes": 453781
+    },
+    {
+      "source_file": "bf10_planar_object_convex.pdf",
+      "source_sha256": "6f81772923e02b4f5d6d7fe26cb54f9008a2e7a177461fb602a240fe4e9bcbcb",
+      "source_bytes": 16376999,
+      "web_asset": "/assets/latest-figures/bf10-planar-object-convex.jpg",
+      "web_bytes": 403646
+    },
+    {
+      "source_file": "bf11_planar_wave_side.pdf",
+      "source_sha256": "7c758432a3e502f4e77f51f99f80ea51d10c53cdbca3bfe192a1123158d92fdc",
+      "source_bytes": 1772216,
+      "web_asset": "/assets/latest-figures/bf11-planar-wave-side.jpg",
+      "web_bytes": 153476
+    },
+    {
+      "source_file": "bf12_planar_wave_diagonal.pdf",
+      "source_sha256": "49e725659cd38a034bad024d7c650b8454807e3616e59a6503901bc6255dd22d",
+      "source_bytes": 15755033,
+      "web_asset": "/assets/latest-figures/bf12-planar-wave-diagonal.jpg",
+      "web_bytes": 412830
+    },
+    {
+      "source_file": "bf13_planar_wave_circle.pdf",
+      "source_sha256": "6948fa0fee560b56e85ece5560ae5c44a414d54d9eae6e62f19cd130336e1de5",
+      "source_bytes": 15126173,
+      "web_asset": "/assets/latest-figures/bf13-planar-wave-circle.jpg",
+      "web_bytes": 412051
+    },
+    {
+      "source_file": "bf14_cylindrical_c.pdf",
+      "source_sha256": "61a439d049fb107230b18e27cc7d44da30f0c6000e9fa6639d7e877669d03a0c",
+      "source_bytes": 10777330,
+      "web_asset": "/assets/latest-figures/bf14-cylindrical-c.jpg",
+      "web_bytes": 255542
+    },
+    {
+      "source_file": "bf15_cylindrical_s.pdf",
+      "source_sha256": "7154beeb768e2a77c26d6955742edc45e7b4efb472860bcb5d1bf9e7193c6a15",
+      "source_bytes": 11311217,
+      "web_asset": "/assets/latest-figures/bf15-cylindrical-s.jpg",
+      "web_bytes": 252830
+    },
+    {
+      "source_file": "bf16_cylindrical_object_manipulation.pdf",
+      "source_sha256": "47386b4c6483c01b89d409a99b0e8e43cbd6358eeaa5d1e23a8587c9c0de8432",
+      "source_bytes": 15215173,
+      "web_asset": "/assets/latest-figures/bf16-cylindrical-object-manipulation.jpg",
+      "web_bytes": 228224
+    },
+    {
+      "source_file": "bf17_revamped_peristaltic_plot.pdf",
+      "source_sha256": "f98fd87ebc42273b02149f3b96a1ff815962c354ce978928d3191ac2c270e98d",
+      "source_bytes": 8984266,
+      "web_asset": "/assets/latest-figures/bf17-revamped-peristaltic-plot.jpg",
+      "web_bytes": 261769
+    },
+    {
+      "source_file": "bf18_locomotion_rolling.pdf",
+      "source_sha256": "e2fec138f40b396d24e0ebdfb26aca4808dda07cde727e73bbc096b387218683",
+      "source_bytes": 16723837,
+      "web_asset": "/assets/latest-figures/bf18-locomotion-rolling.jpg",
+      "web_bytes": 303384
+    }
+  ]
+}
