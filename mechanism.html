@@ -4,19 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sarrus mechanism</title>
-  <meta name="description" content="Geometry, actuation, measured response, build state, and motion examples for topology-programmable soft robotic surfaces and bodies.">
+  <meta name="description" content="Geometry, actuation, measured response, build state, and planar/cylindrical motion for topology-programmable soft robotic surfaces and bodies.">
   <link rel="canonical" href="https://sarrus.aolabs.io/mechanism.html" />
   <meta property="og:title" content="Sarrus mechanism">
-  <meta property="og:description" content="Geometry, actuation, measured response, build state, and motion examples for topology-programmable soft robotic surfaces and bodies.">
-  <meta property="og:image" content="https://sarrus.aolabs.io/og-image-20260506-contained.png">
+  <meta property="og:description" content="Geometry, actuation, measured response, build state, and planar/cylindrical motion for topology-programmable soft robotic surfaces and bodies.">
+  <meta property="og:image" content="https://sarrus.aolabs.io/og-image-20260506-clear.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sarrus.aolabs.io/mechanism.html">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Sarrus mechanism">
-  <meta name="twitter:description" content="Geometry, actuation, measured response, build state, and motion examples for topology-programmable soft robotic surfaces and bodies.">
-  <meta name="twitter:image" content="https://sarrus.aolabs.io/og-image-20260506-contained.png">
-  <link rel="icon" href="/favicon.svg?v=20260506-contained" type="image/svg+xml">
-  <link rel="stylesheet" href="/styles.css?v=20260506-language-cleanup">
+  <meta name="twitter:description" content="Geometry, actuation, measured response, build state, and planar/cylindrical motion for topology-programmable soft robotic surfaces and bodies.">
+  <meta name="twitter:image" content="https://sarrus.aolabs.io/og-image-20260506-clear.png">
+  <link rel="icon" href="/favicon.svg?v=20260506-clear" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css?v=20260506-latest-figures">
 </head>
 <body>
   <header class="topbar" aria-label="Sarrus navigation">
@@ -34,9 +34,9 @@
         <div>
           <p>mechanism</p>
           <h1>Sarrus mechanism</h1>
-          <span>Geometry, actuation, measured response, build state, and motion examples for topology-programmable soft robotic surfaces and bodies.</span>
+          <span>Geometry, actuation, measured response, build state, and planar/cylindrical motion for topology-programmable soft robotic surfaces and bodies.</span>
         </div>
-        <img src="/assets/linkage-geometry.jpg" alt="Sarrus-linkage cell geometry and pressure-driven expansion.">
+        <img src="/assets/latest-figures/bf01-linkage-geometry-capped-uncapped.jpg" alt="Sarrus-linkage cell geometry and pressure-driven expansion.">
       </header>
 
       <section class="proof-strip" aria-label="Mechanism summary">
@@ -66,11 +66,11 @@
         </div>
         <div class="proof-media two-up">
           <figure>
-            <img src="/assets/linkage-geometry.jpg" alt="Cell geometry and linkage record.">
+            <img src="/assets/latest-figures/bf01-linkage-geometry-capped-uncapped.jpg" alt="Cell geometry and pressure-driven expansion.">
             <figcaption>Cell geometry and pressure-driven expansion.</figcaption>
           </figure>
           <figure>
-            <img src="/assets/force-stiffness.jpg" alt="Pressure-dependent force and stiffness data.">
+            <img src="/assets/latest-figures/bf05-linkage-array-force-stiffness-comparison-with-capped.jpg" alt="Pressure-dependent force and stiffness data.">
             <figcaption>Pressure-dependent force and stiffness from the paper figures.</figcaption>
           </figure>
         </div>
@@ -146,7 +146,7 @@
         </div>
       </section>
 
-      <section class="proof-section">
+      <section class="proof-section" id="motion">
         <div class="proof-copy">
           <p>build</p>
           <h2>Build and actuation</h2>
@@ -158,11 +158,11 @@
         </div>
         <div class="proof-media two-up">
           <figure>
-            <img src="/assets/module-parts.jpg" alt="Sarrus module parts and printed prototype.">
-            <figcaption>Printed cell/module parts used for repeated assemblies.</figcaption>
+            <img src="/assets/latest-figures/bf03-squish-pics.jpg" alt="Cell and array compression tests.">
+            <figcaption>Cell and array compression tests.</figcaption>
           </figure>
           <figure>
-            <img src="/assets/module-biasing.jpg" alt="Module-level directional bending bias.">
+            <img src="/assets/latest-figures/bf02-module-biasing-with-angle.jpg" alt="Module-level directional bending bias.">
             <figcaption>Module-level directional bending from leg orientation and pressure-driven deformation.</figcaption>
           </figure>
         </div>
@@ -171,19 +171,39 @@
       <section class="proof-section">
         <div class="proof-copy">
           <p>motion</p>
-          <h2>Motion examples</h2>
+          <h2>Planar and cylindrical motion</h2>
           <ul>
-            <li>The repeated cell/module architecture produces more than a static soft-robotics sample: it creates repeatable physical behaviors.</li>
-            <li>A surface or body can visibly change shape, move an object, generate a travelling wave, or produce body-scale motion from the same module architecture.</li>
-            <li>The clearest object-manipulation example is pickup and drop: the body lowers around an object, transports it through a curved posture, and releases it elsewhere.</li>
+            <li>Planar arrays create domes, overhangs, object transport, and traveling waves from local actuation patterns.</li>
+            <li>Cylindrical assemblies reuse the same cell architecture for bending, object manipulation, peristaltic crawling, and rolling.</li>
+            <li>The page now uses the latest exported figure set for both surface and body-scale motion.</li>
           </ul>
         </div>
-        <figure class="proof-video">
-          <video autoplay muted loop playsinline preload="metadata" poster="/assets/motion-pickup-drop.jpg">
-            <source src="/assets/motion-pickup-drop.mp4" type="video/mp4">
-          </video>
-          <figcaption>Object pickup, transport, and drop sequence from the cylindrical topology.</figcaption>
-        </figure>
+        <div class="proof-media motion-gallery" aria-label="Planar and cylindrical motion figures">
+          <figure>
+            <img src="/assets/latest-figures/bf09-planar-object-concave.jpg" alt="Planar object transport by concave deformation.">
+            <figcaption>Planar object transport by concave deformation.</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/latest-figures/bf11-planar-wave-side.jpg" alt="Planar side-traveling wave.">
+            <figcaption>Planar side-traveling wave.</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/latest-figures/bf13-planar-wave-circle.jpg" alt="Planar circular traveling wave.">
+            <figcaption>Planar circular traveling wave.</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/latest-figures/bf16-cylindrical-object-manipulation.jpg" alt="Cylindrical object manipulation.">
+            <figcaption>Cylindrical object manipulation.</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/latest-figures/bf17-revamped-peristaltic-plot.jpg" alt="Peristaltic crawling sequence and travel plot.">
+            <figcaption>Peristaltic crawling sequence and travel plot.</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/latest-figures/bf18-locomotion-rolling.jpg" alt="Self-rolling cylindrical body.">
+            <figcaption>Self-rolling cylindrical body.</figcaption>
+          </figure>
+        </div>
       </section>
 
       <section class="paper-links mechanism-papers" aria-label="Mechanism source PDFs">
