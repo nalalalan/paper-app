@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Sarrus icon"><defs><filter id="d" x="-35%" y="-35%" width="170%" height="170%"><feDropShadow dx="0" dy="10" stdDeviation="6" flood-color="#2b211d" flood-opacity=".18"/><feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#fffaf4" flood-opacity=".48"/></filter><linearGradient id="cream" x1="18" y1="18" x2="108" y2="114"><stop stop-color="#fff8ef"/><stop offset="1" stop-color="#e4d7c6"/></linearGradient><linearGradient id="ink" x1="18" y1="14" x2="108" y2="116"><stop stop-color="#34333b"/><stop offset="1" stop-color="#090b11"/></linearGradient><linearGradient id="teal" x1="18" y1="20" x2="108" y2="112"><stop stop-color="#84aaa0"/><stop offset=".56" stop-color="#517d76"/><stop offset="1" stop-color="#294f52"/></linearGradient><linearGradient id="gold" x1="18" y1="16" x2="108" y2="112"><stop stop-color="#efc868"/><stop offset=".58" stop-color="#bd8337"/><stop offset="1" stop-color="#6d4522"/></linearGradient></defs><g filter="url(#d)"><path d="M25 82c13-25 25-38 39-38s26 13 39 38" fill="none" stroke="url(#gold)" stroke-width="9" stroke-linecap="round"/><path d="M31 86h66" stroke="url(#teal)" stroke-width="7" stroke-linecap="round"/><path d="M34 84 51 56 72 84 94 55" fill="none" stroke="url(#ink)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34" cy="84" r="8" fill="url(#cream)"/><circle cx="51" cy="56" r="8" fill="url(#gold)"/><circle cx="72" cy="84" r="8" fill="url(#cream)"/><circle cx="94" cy="55" r="8" fill="url(#teal)"/><circle cx="34" cy="84" r="3.3" fill="url(#ink)"/><circle cx="51" cy="56" r="3.3" fill="#fff8ef"/><circle cx="72" cy="84" r="3.3" fill="url(#ink)"/><circle cx="94" cy="55" r="3.3" fill="#fff8ef"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Sarrus icon">
+  <defs>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#2b241d" flood-opacity="0.20"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <path d="M13 43c6-15 16-22 28-22 6 0 10 2 12 6" fill="none" stroke="#181716" stroke-width="5" stroke-linecap="round"/>
+    <path d="M16 42h12l8-13 11 13" fill="none" stroke="#6f9890" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M25 22c7-5 16-5 24 0" fill="none" stroke="#c49a45" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="16" cy="42" r="5" fill="#fffaf2"/>
+    <circle cx="16" cy="42" r="2.4" fill="#181716"/>
+    <circle cx="29" cy="42" r="5" fill="#fffaf2"/>
+    <circle cx="29" cy="42" r="2.4" fill="#181716"/>
+    <circle cx="36" cy="29" r="5" fill="#fffaf2"/>
+    <circle cx="36" cy="29" r="2.4" fill="#c49a45"/>
+    <circle cx="48" cy="27" r="5" fill="#fffaf2"/>
+    <circle cx="48" cy="27" r="2.4" fill="#6f9890"/>
+  </g>
+</svg>
