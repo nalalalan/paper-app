@@ -103,43 +103,9 @@ h1 {
 }
 
 .paper-title-block {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 24px;
-  align-items: end;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   padding: clamp(24px, 4vw, 48px) 0;
-}
-
-.paper-button {
-  min-height: 42px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  background: rgba(255, 250, 240, .08);
-  color: var(--ink);
-  padding: 0 14px;
-  font-size: 13px;
-  font-weight: 900;
-  text-decoration: none;
-  transition: 160ms ease;
-}
-
-.paper-button.primary {
-  border-color: var(--accent);
-  background: var(--accent);
-  color: #150d0a;
-}
-
-.paper-button:hover,
-.paper-button:focus-visible {
-  border-color: rgba(230, 179, 77, .68);
-  background: rgba(255, 250, 240, .12);
-  outline: none;
-  transform: translateY(-1px);
 }
 
 .motion-grid,
@@ -516,7 +482,6 @@ h1 {
   .motion-stack,
   .object-study,
   .architecture-link,
-  .paper-title-block,
   .architecture-section,
   .evidence-table-section,
   .architecture-papers {
