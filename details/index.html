@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project details | sarrus.aolabs.io</title>
+  <meta name="description" content="Project details for the Sarrus pneumatic cell system: geometry, measurements, build state, and programmed surface/body motion.">
+  <link rel="canonical" href="https://sarrus.aolabs.io/details/" />
+  <meta property="og:title" content="Project details">
+  <meta property="og:description" content="Cell geometry, module bending, measurements, build state, and programmed motion for Sarrus pneumatic cell arrays.">
+  <meta property="og:image" content="https://sarrus.aolabs.io/og-image-20260506-clear.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sarrus.aolabs.io/details/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Project details">
+  <meta name="twitter:description" content="Cell geometry, module bending, measurements, build state, and programmed motion for Sarrus pneumatic cell arrays.">
+  <meta name="twitter:image" content="https://sarrus.aolabs.io/og-image-20260506-clear.png">
+  <link rel="icon" href="/favicon.svg?v=20260506-clear" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css?v=20260507-details-route">
+</head>
+<body>
+  <header class="topbar" aria-label="Sarrus navigation">
+    <a class="brand" href="/">Sarrus</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/paper.pdf" download>PDF</a>
+      <a class="ao-home" href="https://aolabs.io/" aria-label="AO Labs">
+        <img src="https://aolabs.io/favicon.svg" alt="">
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="details-page" aria-label="Sarrus project details">
+      <section class="details-overview" aria-label="Current project state">
+        <div>
+          <h1>Project details</h1>
+          <p>Soft robotic surfaces and bodies with reconfigurable topologies based on a monolithically printed pneumatic cell.</p>
+        </div>
+        <dl class="details-facts">
+          <div>
+            <dt>Cell</dt>
+            <dd>Monolithically printed pneumatic Sarrus-linkage cell</dd>
+          </div>
+          <div>
+            <dt>Range</dt>
+            <dd>10-120 psi</dd>
+          </div>
+          <div>
+            <dt>Build</dt>
+            <dd>Snap-fit modules; tethered pneumatic inputs</dd>
+          </div>
+          <div>
+            <dt>Scope</dt>
+            <dd>Cell response / module bending / surface programs / body motion</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="architecture-section">
+        <div class="section-copy">
+          <h2>Cell and module response</h2>
+          <dl class="record-list">
+            <div>
+              <dt>Geometry</dt>
+              <dd>Capped and uncapped cells compared over the same pressure range.</dd>
+            </div>
+            <div>
+              <dt>Actuation</dt>
+              <dd>Pressure-driven expansion rotates compliant linkage legs while the integrated chamber supplies deformation.</dd>
+            </div>
+            <div>
+              <dt>Module bias</dt>
+              <dd>The 2 x 2 module introduces the bending response used for surface shaping and cylindrical body motion.</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="figure-grid cell-module-figures">
+          <figure>
+            <img src="/assets/latest-figures/bf01-linkage-geometry-capped-uncapped.jpg?v=2026-05-07-cell-module" alt="Capped and uncapped cell geometry and pressure-driven expansion.">
+            <figcaption>Cell expansion under pressure; capped and uncapped variants stay side by side.</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/latest-figures/bf02-module-biasing-with-angle.jpg?v=2026-05-07-cell-module" alt="Single-module and two-module bending under pressure.">
+            <figcaption>Single-module and two-module bending response over the actuation range.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="evidence-table-section" id="measurements">
+        <div>
+          <h2>Measurements</h2>
+          <span>Figure-read values are approximate; table values are direct paper values.</span>
+        </div>
+        <div class="measurement-layout">
+          <figure class="measurement-figure">
+            <img src="/assets/latest-figures/bf05-linkage-array-force-stiffness-comparison-with-capped.jpg" alt="Pressure-dependent force and stiffness data.">
+            <figcaption>Force and stiffness curves for single cells and the 3 x 3 array.</figcaption>
+          </figure>
+          <dl class="metric-list">
+            <div>
+              <dt>Actuation envelope</dt>
+              <dd>10-120 psi plotted for expansion, module bending, hysteresis, force response, and local stiffness.</dd>
+              <dd>Fig. 1; Fig. 2; Fig. 4; Fig. 5</dd>
+            </div>
+            <div>
+              <dt>Output force</dt>
+              <dd>Approx. 40-50 N for single-cell tests; above 50 N for the 3 x 3 array near maximum compression.</dd>
+              <dd>Fig. 5(a-c)</dd>
+            </div>
+            <div>
+              <dt>Local stiffness</dt>
+              <dd>Approx. 5-7 N/mm peak local stiffness across cell and array plots.</dd>
+              <dd>Fig. 5(d-f)</dd>
+            </div>
+            <div>
+              <dt>Planar height</dt>
+              <dd>At 100 psi, 1 x 1 actuation reaches 60 mm max height; 2 x 2 actuation reaches 115 mm.</dd>
+              <dd>Table 1</dd>
+            </div>
+            <div>
+              <dt>Boundary</dt>
+              <dd>Loop area is not digitized here; current build remains tethered and manually assembled.</dd>
+              <dd>Methods; Discussion</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="architecture-section">
+        <div class="section-copy">
+          <h2>Build and test state</h2>
+          <dl class="record-list">
+            <div>
+              <dt>Parts</dt>
+              <dd>Printed cell bodies, caps, and snap-fit connectors shown as physical parts.</dd>
+            </div>
+            <div>
+              <dt>Compression</dt>
+              <dd>Unit-cell and array load tests precede the surface and body demonstrations.</dd>
+            </div>
+            <div>
+              <dt>Limit</dt>
+              <dd>Electronic addressing is outside the current public build state.</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="figure-grid two-up">
+          <figure>
+            <img src="/assets/module-parts.jpg" alt="Printed Sarrus module parts.">
+            <figcaption>Printed module parts and snap-fit assembly.</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/latest-figures/bf03-squish-pics.jpg" alt="Cell and array compression tests.">
+            <figcaption>Compression tests for the unit cell and array.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="architecture-section" id="motion">
+        <div class="section-copy">
+          <h2>Programmed motion</h2>
+          <dl class="record-list">
+            <div>
+              <dt>Planar surface</dt>
+              <dd>Local pressure patterns produce measured height maps and object transport.</dd>
+            </div>
+            <div>
+              <dt>Cylindrical body</dt>
+              <dd>The same cell array is wrapped into bending and locomotion assemblies.</dd>
+            </div>
+            <div>
+              <dt>Selected figures</dt>
+              <dd>One representative planar height map, one object transport panel, one cylindrical bending panel, and one crawler sequence.</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="figure-grid motion-gallery" aria-label="Selected motion figures">
+          <figure>
+            <img src="/assets/latest-figures/bf06-planar-dome-single.jpg" alt="Planar dome height maps from local actuation.">
+            <figcaption>Surface height maps from 1 x 1 through 6 x 6 actuation patterns.</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/latest-figures/bf09-planar-object-concave.jpg" alt="Planar object transport by concave deformation.">
+            <figcaption>Object transport on a concave planar deformation.</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/latest-figures/bf14-cylindrical-c.jpg" alt="Cylindrical C-bending program.">
+            <figcaption>Cylindrical C-bending from wrapped module actuation.</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/latest-figures/bf17-revamped-peristaltic-plot.jpg" alt="Peristaltic crawling sequence and travel plot.">
+            <figcaption>Peristaltic crawler sequence with distance traveled over time.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="paper-links architecture-papers" aria-label="Paper PDF">
+        <a href="/paper.pdf">Paper PDF</a>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
