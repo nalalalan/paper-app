@@ -81,15 +81,6 @@ main {
   object-fit: cover;
 }
 
-.architecture-link p {
-  margin: 0 0 11px;
-  color: var(--accent);
-  font-size: 12px;
-  font-weight: 900;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
 h1,
 h2 {
   margin: 0;
