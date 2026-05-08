@@ -20,11 +20,18 @@
       padding: 24px 0 40px;
     }
 
+    html,
+    body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
     .paper-record {
       display: grid;
       grid-template-columns: minmax(0, 1fr) auto;
       gap: 16px;
       align-items: end;
+      overflow: hidden;
       margin-bottom: 16px;
       padding: 24px;
       border: 1px solid var(--line);
@@ -32,11 +39,16 @@
       background: var(--panel);
     }
 
+    .paper-record > div {
+      min-width: 0;
+    }
+
     .paper-record h1 {
       margin: 0;
       max-width: 930px;
       font-size: clamp(32px, 5vw, 66px);
       line-height: .96;
+      overflow-wrap: anywhere;
     }
 
     .paper-record p {
@@ -94,8 +106,21 @@
     }
 
     @media (max-width: 760px) {
+      .paper-shell {
+        width: 100%;
+        max-width: 100%;
+        padding: 24px 18px 40px;
+      }
+
       .paper-record {
         grid-template-columns: 1fr;
+      }
+
+      .paper-record h1 {
+        max-width: min(100%, 300px);
+        font-size: 30px;
+        line-height: 1.05;
+        overflow-wrap: break-word;
       }
 
       .paper-actions {
@@ -114,7 +139,6 @@
     <a class="brand" href="/">Sarrus</a>
     <nav>
       <a href="/details/">Details</a>
-      <a href="/paper.pdf" download>PDF</a>
       <a class="ao-home" href="https://aolabs.io/" aria-label="AO Labs">
         <img src="https://aolabs.io/favicon.svg?v=20260507-suite3" alt="">
       </a>
@@ -129,7 +153,6 @@
       </div>
       <div class="paper-actions">
         <a href="/paper.pdf" download>Open PDF</a>
-        <a href="/details/">Details</a>
       </div>
     </section>
 
