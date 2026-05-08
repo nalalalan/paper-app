@@ -1,1 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="6 6 116 116" role="img" aria-label="Sarrus icon"><defs><filter id="d" x="-35%" y="-35%" width="170%" height="170%"><feDropShadow dx="0" dy="10" stdDeviation="6" flood-color="#2b211d" flood-opacity=".18"/><feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#fffaf4" flood-opacity=".48"/></filter><linearGradient id="cream" x1="18" y1="18" x2="108" y2="114"><stop stop-color="#fff8ef"/><stop offset="1" stop-color="#e4d7c6"/></linearGradient><linearGradient id="ink" x1="18" y1="14" x2="108" y2="116"><stop stop-color="#34333b"/><stop offset="1" stop-color="#090b11"/></linearGradient><linearGradient id="teal" x1="18" y1="20" x2="108" y2="112"><stop stop-color="#84aaa0"/><stop offset=".56" stop-color="#517d76"/><stop offset="1" stop-color="#294f52"/></linearGradient><linearGradient id="gold" x1="18" y1="16" x2="108" y2="112"><stop stop-color="#efc868"/><stop offset=".58" stop-color="#bd8337"/><stop offset="1" stop-color="#6d4522"/></linearGradient></defs><g filter="url(#d)"><path d="M25 82c13-25 25-38 39-38s26 13 39 38" fill="none" stroke="url(#gold)" stroke-width="9" stroke-linecap="round"/><path d="M31 86h66" stroke="url(#teal)" stroke-width="7" stroke-linecap="round"/><path d="M34 84 51 56 72 84 94 55" fill="none" stroke="url(#ink)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34" cy="84" r="8" fill="url(#cream)"/><circle cx="51" cy="56" r="8" fill="url(#gold)"/><circle cx="72" cy="84" r="8" fill="url(#cream)"/><circle cx="94" cy="55" r="8" fill="url(#teal)"/><circle cx="34" cy="84" r="3.3" fill="url(#ink)"/><circle cx="51" cy="56" r="3.3" fill="#fff8ef"/><circle cx="72" cy="84" r="3.3" fill="url(#ink)"/><circle cx="94" cy="55" r="3.3" fill="#fff8ef"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="6 6 116 116" role="img" aria-label="Sarrus icon">
+  <defs>
+    <filter id="d" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="10" stdDeviation="6" flood-color="#2b211d" flood-opacity=".14"/>
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#fffaf4" flood-opacity=".5"/>
+    </filter>
+    <linearGradient id="teal" x1="18" y1="20" x2="108" y2="112">
+      <stop stop-color="#8fb2a8"/>
+      <stop offset=".56" stop-color="#5f897f"/>
+      <stop offset="1" stop-color="#3f665f"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="20" y1="16" x2="108" y2="112">
+      <stop stop-color="#efc86f"/>
+      <stop offset=".58" stop-color="#c58d43"/>
+      <stop offset="1" stop-color="#8d6330"/>
+    </linearGradient>
+    <linearGradient id="clay" x1="18" y1="18" x2="108" y2="114">
+      <stop stop-color="#e6a091"/>
+      <stop offset=".55" stop-color="#c47861"/>
+      <stop offset="1" stop-color="#8c5847"/>
+    </linearGradient>
+    <linearGradient id="cream" x1="18" y1="18" x2="108" y2="114">
+      <stop stop-color="#fff8ef"/>
+      <stop offset="1" stop-color="#eadbc8"/>
+    </linearGradient>
+    <linearGradient id="line" x1="18" y1="14" x2="108" y2="116">
+      <stop stop-color="#746554"/>
+      <stop offset="1" stop-color="#4b4036"/>
+    </linearGradient>
+  </defs>
+  <g filter="url(#d)" transform="rotate(-8 64 64)">
+    <path d="M31 43h50c17 0 29 12 29 29v10H56c-17 0-29-12-29-29V47c0-2 2-4 4-4z" fill="url(#cream)"/>
+    <path d="M31 43h50c17 0 29 12 29 29v10H56c-17 0-29-12-29-29V47c0-2 2-4 4-4z" fill="none" stroke="url(#line)" stroke-width="3" opacity=".36"/>
+    <rect x="36" y="49" width="18" height="18" rx="7" fill="url(#teal)"/>
+    <rect x="58" y="47" width="20" height="20" rx="8" fill="url(#gold)"/>
+    <rect x="82" y="51" width="18" height="18" rx="7" fill="url(#teal)"/>
+    <rect x="41" y="72" width="19" height="18" rx="7" fill="url(#gold)"/>
+    <rect x="64" y="72" width="22" height="20" rx="8" fill="url(#clay)"/>
+    <rect x="90" y="72" width="18" height="18" rx="7" fill="url(#teal)"/>
+    <path d="M45 58c16 16 33 23 54 23" fill="none" stroke="#fff8ef" stroke-width="4" stroke-linecap="round" opacity=".72"/>
+    <path d="M37 98c20 10 46 12 74 0" fill="none" stroke="url(#line)" stroke-width="5" stroke-linecap="round" opacity=".54"/>
+  </g>
+</svg>
