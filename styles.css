@@ -211,6 +211,55 @@ h1 {
   box-shadow: var(--shadow);
 }
 
+.media-tone {
+  filter:
+    brightness(var(--media-brightness, .98))
+    contrast(var(--media-contrast, 1.04))
+    saturate(var(--media-saturation, .92));
+}
+
+.media-tone-neutral {
+  --media-brightness: .99;
+  --media-contrast: 1.04;
+  --media-saturation: .94;
+}
+
+.media-tone-soft-lift {
+  --media-brightness: 1.08;
+  --media-contrast: 1.04;
+  --media-saturation: .92;
+}
+
+.media-tone-lift {
+  --media-brightness: 1.13;
+  --media-contrast: 1.05;
+  --media-saturation: .90;
+}
+
+.media-tone-lift-strong {
+  --media-brightness: 1.26;
+  --media-contrast: 1.04;
+  --media-saturation: .86;
+}
+
+.media-tone-soft-settle {
+  --media-brightness: .84;
+  --media-contrast: 1.04;
+  --media-saturation: .92;
+}
+
+.media-tone-settle {
+  --media-brightness: .88;
+  --media-contrast: 1.05;
+  --media-saturation: .94;
+}
+
+.media-tone-high-key {
+  --media-brightness: .76;
+  --media-contrast: 1.10;
+  --media-saturation: .90;
+}
+
 .motion-grid video {
   height: auto;
 }
