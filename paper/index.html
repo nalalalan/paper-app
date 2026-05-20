@@ -15,6 +15,68 @@
   <link rel="stylesheet" href="https://aolabs.io/suite-header.css?v=20260516-suite-bloom">
   <link rel="stylesheet" href="/styles.css?v=20260516-media-tone2">
   <style>
+    .paper-gate {
+      width: min(calc(100vw - 36px), 520px);
+      margin: 0 auto 16px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    .paper-gate h2 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      line-height: 1.05;
+    }
+
+    .paper-gate p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+      text-transform: none;
+      letter-spacing: 0;
+      font-weight: 500;
+    }
+
+    .paper-gate form {
+      display: grid;
+      gap: 10px;
+    }
+
+    .paper-gate input {
+      min-height: 44px;
+      width: 100%;
+      padding: 0 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 250, 240, .02);
+      color: var(--ink);
+      font: inherit;
+    }
+
+    .paper-gate button {
+      min-height: 44px;
+      border: 1px solid rgba(230, 179, 77, .58);
+      border-radius: 8px;
+      background: rgba(230, 179, 77, .16);
+      color: var(--ink);
+      font: inherit;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .paper-gate .gate-error {
+      min-height: 18px;
+      color: #d96c6c;
+      font-size: 14px;
+    }
+
+    .paper-hidden {
+      display: none !important;
+    }
+
     .paper-shell {
       width: min(calc(100vw - 36px), 1180px);
       margin: 0 auto;
@@ -152,19 +214,66 @@
   </header>
 
   <main class="paper-shell">
-    <section class="paper-record" aria-label="Paper">
+    <section class="paper-gate" aria-label="Paper access" id="paper-gate">
+      <h2>Sarrus paper</h2>
+      <p>Enter the paper code.</p>
+      <form id="paper-gate-form">
+        <input id="paper-password" type="password" inputmode="numeric" autocomplete="current-password" aria-label="Paper code">
+        <button type="submit">Open paper</button>
+        <div class="gate-error" id="paper-gate-error" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <section class="paper-record paper-hidden" aria-label="Paper" id="paper-record">
       <div>
         <p>Paper</p>
         <h1>Soft robotic surfaces and bodies with reconfigurable topologies based on a monolithically printed pneumatic cell</h1>
       </div>
       <div class="paper-actions">
-        <a href="/paper.pdf" download>Open PDF</a>
+        <a id="paper-download" href="../topology-programmable-soft-robotic-surfaces-and-bodies-full.pdf" download>Open PDF</a>
       </div>
     </section>
 
-    <section class="paper-viewer" aria-label="PDF preview">
-      <iframe src="/paper.pdf#view=FitH" title="Sarrus paper PDF"></iframe>
+    <section class="paper-viewer paper-hidden" aria-label="PDF preview" id="paper-viewer">
+      <iframe id="paper-frame" title="Sarrus paper PDF"></iframe>
     </section>
   </main>
+  <script>
+    const gateKey = "sarrus-paper-access-v1";
+    const paperCode = "031120";
+    const pdfPath = "../topology-programmable-soft-robotic-surfaces-and-bodies-full.pdf";
+    const gate = document.getElementById("paper-gate");
+    const form = document.getElementById("paper-gate-form");
+    const input = document.getElementById("paper-password");
+    const error = document.getElementById("paper-gate-error");
+    const record = document.getElementById("paper-record");
+    const viewer = document.getElementById("paper-viewer");
+    const frame = document.getElementById("paper-frame");
+    const download = document.getElementById("paper-download");
+
+    function unlockPaper() {
+      sessionStorage.setItem(gateKey, "granted");
+      gate.classList.add("paper-hidden");
+      record.classList.remove("paper-hidden");
+      viewer.classList.remove("paper-hidden");
+      frame.src = `${pdfPath}#view=FitH`;
+      download.href = pdfPath;
+    }
+
+    if (sessionStorage.getItem(gateKey) === "granted") {
+      unlockPaper();
+    } else {
+      input.focus();
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        if (input.value !== paperCode) {
+          error.textContent = "Wrong paper code";
+          return;
+        }
+        error.textContent = "";
+        unlockPaper();
+      });
+    }
+  </script>
 </body>
 </html>
