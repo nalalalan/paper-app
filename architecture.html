@@ -4,11 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>sarrus details</title>
+  <meta name="robots" content="noindex, nofollow">
   <link rel="canonical" href="https://sarrus.aolabs.io/details/" />
-  <meta http-equiv="refresh" content="0; url=/details/">
-  <script>
-    window.location.replace('/details/');
-  </script>
+  <script>document.documentElement.classList.add('auth-pending');</script>
+  <style>html.auth-pending body{visibility:hidden}</style>
+  <link rel="stylesheet" href="/auth.css?v=20260520-password1">
+  <script defer src="/auth.js?v=20260520-password1"></script>
+  <script>window.addEventListener("sarrus:authorized", () => window.location.replace("/details/"));</script>
 </head>
 <body>
   <a href="/details/">Open details.</a>
